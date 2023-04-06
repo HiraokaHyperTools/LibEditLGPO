@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net45;netstandard1.3;net6.0-windows</TargetFrameworks>
+
+    <PackageId>HiraokaHyperTools.LibEditLGPO</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>kenjiuno</Authors>
+    <Company>HiraokaHyperTools</Company>
+    <Copyright>(c) 2023 HiraokaHyperTools, inc.</Copyright>
+    <Description>Simple wrapper of IGroupPolicyObject</Description>
+    <!-- https://spdx.org/licenses/ -->
+    <PackageLicenseExpression>BSD-2-Clause</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/HiraokaHyperTools/LibEditLGPO</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/HiraokaHyperTools/LibEditLGPO.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <LangVersion>7.3</LangVersion>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>IGroupPolicyObject GPO</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\">
+      <Link>README.md</Link>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
+    <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
+  </ItemGroup>
+</Project>
