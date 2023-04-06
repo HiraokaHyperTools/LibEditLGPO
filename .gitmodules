@@ -1,0 +1,4 @@
+[submodule "docs"]
+	path = docs
+	url = https://github.com/HiraokaHyperTools/LibEditLGPO.git
+	branch = gh-pages
