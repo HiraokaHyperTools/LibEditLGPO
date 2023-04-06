@@ -4,6 +4,8 @@
 
 This will provide Simple wrapper of IGroupPolicyObject: [IGroupPolicyObject (gpedit.h) - Win32 apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/api/gpedit/nn-gpedit-igrouppolicyobject)
 
+Inspired by https://stackoverflow.com/a/22673417 (which is inspired by https://bitbucket.org/MartinEden/local-policy)
+
 Links: [Doxygen](https://hiraokahypertools.github.io/LibEditLGPO/html/)
 
 ## Listing usage
